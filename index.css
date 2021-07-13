@@ -1,0 +1,91 @@
+.grid1 { grid-area: header; }
+.grid2 { grid-area: nav-bar; }
+.grid3 { grid-area: side-bar; }
+.grid4 { grid-area: slideshow}
+.grid5 { grid-area: main; }
+.grid6 { grid-area: footer; }
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar'
+        /* 'side-bar slideshow slideshow slideshow slideshow slideshow' */
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+}
+
+h1 {
+    padding-left: 3%;
+    font-size: 250%;
+}
+/* NavBar CSS */
+.grid2 {
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    margin-right: 100px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+ul > li {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s; 
+}
+
+li {
+    display: inline;
+}
+
+li > a {
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: color 0.5s;
+}
+
+li:hover {
+    border-bottom: 1px solid black;
+}
+
+li a:hover{
+    color: black;
+}
+
+a {
+    padding: 8px;
+} 
+
+.active {
+    border-bottom: 1px solid black;
+}
+
+/* Course Selector Css */
+.grid5 {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+}
+
+.course {
+    flex: 33.3%;
+    padding: 1%;
+    text-align: center;
+}
+
+.course-link {
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#course1 a:hover {
+    color:blue;
+}

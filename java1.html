@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Edugramming | Education in Programming</title>
+        <link rel="stylesheet" href="java1.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="grid1">
+                <h1>Edugramming</h1>
+                <div style="text-align: center;" class="placeholder">
+                    <hr>
+                </div>
+            </div>
+            
+
+            <div class="grid2">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="active"><a href="courses.html">COURSES</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
+
+            <div class="grid5">
+
+                <div class="course-title">
+                    <h2>Java For Beginners (~ 2 hours)</h2>
+                    <p class="course-description">This course is taught through a series of videos which provide a step-by-step tutorial on the introduction to Java.</p>
+                </div>
+
+                <div class="flex-courses">
+
+                    <div class="java-intro">
+                        <h3 class="header">Introduction to Java</h3>
+                        <hr class="course-divider"> 
+
+                            <div id="lessonI-1" class="lesson">
+                                <a id="lessonI-1-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/MpX-0ZtF-08/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java JDK and IDE Download</a>
+                            </div>
+
+                            <div id="lessonI-2" class="lesson">
+                                <a id="lessonI-2-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/JFQ_hj6xeQo/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Program Structure</a>
+                            </div>
+
+                            <div id="lessonI-3" class="lesson">
+                                <a id="lessonI-3-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/AYINfCPYGMU/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Project Start-up</a>
+                            </div>
+
+                            <div id="lessonI-4" class="lesson">
+                                <a id="lessonI-4-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/CcQkO22zpxA/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Print Method and Comments</a>
+                            </div>
+                    </div>
+
+
+                    <div class="java-data-types">
+                        <h3 class="header">Unit 1: Java Data Types</h3>
+                        <hr class="course-divider">
+
+                            <div id="lesson1-1" class="lesson">
+                                <a id="lesson1-1-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/OC2ph9uQuYM/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Variables</a>
+                            </div>
+                    </div>
+
+                    <div>3</div>
+
+                </div>
+            </div>
+
+            <div id="main-modal" class="modal">
+
+                <div id="main-modal-content" class="modal-content">
+
+                    <div class="modal-header"> 
+                    <span class="close-modal">&times;</span>
+                    <p id="modal-title"></p>
+                    </div>
+
+                    <div class="modal-body">
+                        <span class="black-bar"></span>
+                        <iframe class="youtube-video" id="lesson-video" name="edu-video-player" width="100%" height="454.5" type="text/html" frameborder="0" allowfullscreen></iframe>
+                        <span class="black-bar"></span>
+                    </div>
+
+                    <div class="modal-footer">
+                        <input type="button" value="Next Lesson" id="next-lesson" class="modal-button" href="#"></input>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+        <script>
+
+            var modal = document.getElementById("main-modal");
+
+            var span = document.getElementsByClassName("close-modal")[0];
+
+            var modal_title = document.getElementById("modal-title");
+
+            var modal_button = document.getElementById("next-lesson");
+
+
+            span.onclick = function () {
+                modal.style.display = "none";
+                $('.youtube-video')
+                [0].contentWindow.postMessage('{"event":"command","func":"' + 'stopvideo' + '","args":""}','*');
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            //Lesson I-1
+            var lessonI_1Trigger = document.getElementById("lessonI-1-link");
+
+            lessonI_1Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Introduction: Java JDK and IDE Download";
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    // going to I-2
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/JFQ_hj6xeQo/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Introduction: Java Program Structure";
+
+                    modal_button.onclick = function () { //going to I-3
+                        document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/AYINfCPYGMU/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                        modal_title.innerHTML = "Introduction: Java Project Start-up";
+
+                        modal_button.onclick = function () {    //going to I-4
+                            document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/CcQkO22zpxA/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                            modal_title.innerHTML = "Introduction: Java Print Method and Comments"
+                            modal_button.value = "Next Unit: Java Data Types";
+
+                            modal_button.onclick = function () {    //close modal for next unit
+                                modal.style.display = "none";
+                            }
+                        }
+                    }
+                }
+            }
+
+            //Lesson I-2
+            var lessonI_2Trigger = document.getElementById("lessonI-2-link");
+
+            lessonI_2Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Introduction: Java Program Structure"
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    // going to I-3
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/AYINfCPYGMU/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Introduction: Java Project Start-up";
+
+                    modal_button.onclick = function () {    //going to I-4
+                        document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/CcQkO22zpxA/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                        modal_title.innerHTML = "Introduction: Java Print Method and Comments"
+                        modal_button.value = "Next Unit: Java Data Types";
+
+                        modal_button.onclick = function () {    //close modal for next unit
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+            }
+
+            //Lesson I-3
+            var lessonI_3Trigger = document.getElementById("lessonI-3-link");
+
+            lessonI_3Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Introduction: Java Project Startup"
+                modal_button.value = "Next Lesson";
+                
+                modal_button.onclick = function (){ //going to I-4
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/CcQkO22zpxA/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Introduction: Java Print Method and Comments";
+                    modal_button.value = "Next Unit: Java Data Types";
+
+                    modal_button.onclick = function () {    //close modal for next unit
+                        modal.style.display = "none";
+                    }
+                }
+            }
+
+            //Lesson I-4
+            var lessonI_4Trigger = document.getElementById("lessonI-4-link");
+
+            lessonI_4Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Introduction: Java Print Method and Comments";
+                modal_button.value = "Next Unit: Java Data Types";
+
+                modal_button.onclick = function () {    //close modal for next unit
+                    modal.style.display = "none";
+                }
+            }
+
+
+            //Lesson 1-1
+            var lesson1_1Trigger = document.getElementById("lesson1-1-link");
+
+            lesson1_1Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 1: Java Variables";
+                mdoal_button.value = "Next Lesson";
+            }
+
+        </script>
+            
+    </body>
+</html>
