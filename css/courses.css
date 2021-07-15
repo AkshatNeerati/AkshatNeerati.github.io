@@ -86,3 +86,10 @@ a {
     font-size: 150%;
     font-weight: bold;
 }
+
+.course-link:hover {
+    font-size: 170%;
+    text-decoration: underline;
+    font-weight: bolder;
+    transition: font-size 0.5s, text-decoration 0.5s, font-weight 0.5s;
+}
