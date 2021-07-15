@@ -75,9 +75,19 @@
                             <div id="lesson1-4" class="lesson">
                                 <a id="lesson1-4-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/Q2EDiIsGZmM/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Reference Data Types</a>
                             </div>
+
+                            <div id="lesson1-5" class="lesson">
+                                <a id="lesson1-5-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/XpEMkEOihXc/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Type Casting</a>
+                            </div>
                     </div>
 
-                    <div>3</div>
+
+                    <div class="java-strings">
+                        <h3 class="header">Unit 2: Java Strings</h3>
+                        <hr class="course-divider">
+
+                        
+                    </div>
 
                 </div>
             </div>
@@ -236,7 +246,17 @@
 
                         modal_button.onclick = function () {    //going to 1-4
                             document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/Q2EDiIsGZmM/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
-                            modal_title.innerHTML = "Unit 1: Java Reference Data Types"; 
+                            modal_title.innerHTML = "Unit 1: Java Reference Data Types";
+                            
+                            modal_button.onclick = function () {    //going to 1-5
+                                document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/XpEMkEOihXc/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                                modal_title.innerHTML = "Unit 1: Java Type Casting";
+                                modal_button.value = "Next Unit: Java Strings";
+
+                                modal_button.onclick = function () {    //close modal for next unit
+                                    modal.style.display = "none";
+                                }
+                            }
                         }
                     }
                 }
@@ -257,6 +277,16 @@
                     modal_button.onclick = function () {    //going to 1-4
                         document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/Q2EDiIsGZmM/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
                         modal_title.innerHTML = "Unit 1: Java Reference Data Types";
+
+                        modal_button.onclick = function () {    //going to 1-5
+                            document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/XpEMkEOihXc/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                            modal_title.innerHTML = "Unit 1: Java Type Casting";
+                            modal_button.value = "Next Unit: Java Strings";
+
+                            modal_button.onclick = function () {    //close modal for next unit
+                                modal.style.display = "none";
+                            }
+                        }
                     }
                 }
             }
@@ -272,6 +302,16 @@
                 modal_button.onclick = function () {    //going to 1-4
                     document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/Q2EDiIsGZmM/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
                     modal_title.innerHTML = "Unit 1: Java Reference Data Types";
+
+                    modal_button.onclick = function () {    //going to 1-5
+                        document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/XpEMkEOihXc/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                        modal_title.innerHTML = "Unit 1: Java Type Casting";
+                        modal_button.value = "Next Unit: Java Strings";
+
+                        modal_button.onclick = function () {    //close modal for next unit
+                            modal.style.display = "none";
+                        }
+                    }
                 }
             }
 
@@ -282,6 +322,29 @@
                 modal.style.display = "block";
                 modal_title.innerHTML = "Unit 1: Java Reference Data Types";
                 modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    //going to 1-5
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/XpEMkEOihXc/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Unit 1: Java Type Casting";
+                    modal_button.value = "Next Unit: Java Strings";
+
+                    modal_button.onclick = function () {    //close modal for next unit
+                        modal.style.display = "none";
+                    }
+                }
+            }
+
+            //Lesson 1-5
+            var lesson1_5Trigger = document.getElementById("lesson1-5-link");
+
+            lesson1_5Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 1: Java Type Casting";
+                modal_button.value = "Next Unit: Java Strings";
+
+                modal_button.onclick = function () {    //close modal for next unit
+                    modal.style.display = "none"
+                }
             }
 
         </script>
