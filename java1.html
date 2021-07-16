@@ -86,9 +86,28 @@
                         <h3 class="header">Unit 2: Java Strings</h3>
                         <hr class="course-divider">
 
-                        
+                            <div id="lesson2-1" class="lesson">
+                                <a id="lesson2-1-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/UYbc8bohako/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Strings</a>
+                            </div>
+
+                            <div id="lesson2-2" class="lesson">
+                                <a id="lesson2-2-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/k049_YvE2Yw/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java String Concatenation</a>
+                            </div>
+
+                            <div id="lesson2-3" class="lesson">
+                                <a id="lesson2-3-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/ZvYIoq6IhPg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java String Methods</a>
+                            </div>
+
+                            <div id="lesson2-4" class="lesson">
+                                <a id="lesson2-4-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/5fiN6_7YaFg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Escape Character</a>
+                            </div>
                     </div>
 
+
+                    <div class="java-reference-types">
+                        <h3 class="header">Unit 3: Java Reference Types</h3>
+                        <hr class="course-divider">
+                    </div>
                 </div>
             </div>
 
@@ -346,6 +365,93 @@
                     modal.style.display = "none"
                 }
             }
+
+
+            //Lesson 2-1
+            var lesson2_1Trigger = document.getElementById("lesson2-1-link");
+
+            lesson2_1Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 2: Java Strings";
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    //going to 2-2
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/k049_YvE2Yw/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Unit 2: Java String Concatenation";
+
+                    modal_button.onclick = function () {    //going to 2-3
+                        document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/ZvYIoq6IhPg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                        modal_title.innerHTML = "Unit 2: Java String Methods";
+
+                        modal_button.onclick = function () {    //going to 2-4
+                            document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/5fiN6_7YaFg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                            modal_title.innerHTML = "Unit 2: Java Escape Character";
+                            modal_button.value = "Next Unit: Java Reference Types";
+
+                            modal_button.onclick = function () {    //close modal for next unit
+                                modal.style.display = "none";
+                            }
+                        }
+                    }
+                }
+            }
+
+            //Lesson 2-2
+            var lesson2_2Trigger = document.getElementById("lesson2-2-link");
+
+            lesson2_2Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 2: Java String Concatenation";
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    //going to 2-3
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/ZvYIoq6IhPg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Unit 2: Java String Methods";
+
+                    modal_button.onclick = function () {    //going to 2-4
+                        document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/5fiN6_7YaFg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                        modal_title.innerHTML = "Unit 2: Java Escape Character";
+                        modal_button.value = "Next Unit: Java Reference Types";
+
+                        modal_button.onclick = function () {    //close modal for next unit
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+            }
+
+            //Lesson 2-3
+            var lesson2_3Trigger = document.getElementById("lesson2-3-link");
+
+            lesson2_3Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 2: Java String Methods";
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    //going to 2-4
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/5fiN6_7YaFg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Unit 2: Java Escape Character";
+                    modal_button.value = "Next Unit: Java Reference Types";
+
+                    modal_button.onclick = function () {    //close modal for next unit
+                        modal.style.display = "none";
+                    }
+                }
+            }
+
+            //Lesson 2-4
+            var lesson2_4Trigger = document.getElementById("lesson2-4-link");
+
+            lesson2_4Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 2: Java Escape Character";
+                modal_button.value = "Next Unit: Java Reference Types";
+
+                modal_button.onclick = function () {    //close modal for next unit
+                    modal.style.display = "none";
+                }
+            }
+
 
         </script>
             
