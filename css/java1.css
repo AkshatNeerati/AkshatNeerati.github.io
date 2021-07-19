@@ -12,6 +12,7 @@
         'nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar'
         'main main main main main main'
         'footer footer footer footer footer footer';
+    padding-bottom: 200px;
 }
 
 h1 {
@@ -162,7 +163,7 @@ a {
 .black-bar {
     background-color: black;
     color: black;
-    width: 20%;
+    width: 161.655px;
 }
 
 .modal-footer{
