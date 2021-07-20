@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Java For Beginners | Edugramming</title>
         <link rel="stylesheet" href="css/java1.css">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     </head>
     <body>
 
@@ -107,6 +108,14 @@
                     <div class="java-arrays">
                         <h3 class="header">Unit 3: Java Arrays</h3>
                         <hr class="course-divider">
+
+                            <div id="lesson3-1" class="lesson">
+                                <a id="lesson3-1-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/i3mr1PIzfws/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Arrays</a>
+                            </div>
+
+                            <div id="lesson3-2" class="lesson">
+                                <a id="lesson3-2-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/QnNTzyY3sN0/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Updated Syntax</a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -452,6 +461,29 @@
                 }
             }
 
+
+            //Lesson 3-1
+            var lesson3_1Trigger = document.getElementById("lesson3-1-link");
+
+            lesson3_1Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 3: Java Arrays";
+                modal_button.value = "Next Lesson"
+
+                modal_button.onclick = function () {    //going to 3-2
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/QnNTzyY3sN0/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Unit 2: Java Arrays Updated Syntax";
+                }
+            }
+
+            //Lesson 3-2
+            var lesson3_2Trigger = document.getElementById("lesson3-2-link");
+
+            lesson3_2Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 3: Java Arrays Updated Syntax";
+                modal_button.value = "Next Lesson";
+            }
 
         </script>
             
