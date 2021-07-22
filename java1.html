@@ -114,7 +114,11 @@
                             </div>
 
                             <div id="lesson3-2" class="lesson">
-                                <a id="lesson3-2-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/QnNTzyY3sN0/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Updated Syntax</a>
+                                <a id="lesson3-2-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/QnNTzyY3sN0/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Arrays Updated Syntax</a>
+                            </div>
+
+                            <div id="lesson3-3" class="lesson">
+                                <a id="lesson3-3-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/R6910gnfcRk/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1" target="edu-video-player">Java Array Methods</a>
                             </div>
                     </div>
                 </div>
@@ -472,7 +476,12 @@
 
                 modal_button.onclick = function () {    //going to 3-2
                     document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/QnNTzyY3sN0/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
-                    modal_title.innerHTML = "Unit 2: Java Arrays Updated Syntax";
+                    modal_title.innerHTML = "Unit 3: Java Arrays Updated Syntax";
+
+                    modal_button.onclick = function () {    //going to 3-3
+                        document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/R6910gnfcRk/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                        modal_title = "Unit 3: Java Array Methods";
+                    }
                 }
             }
 
@@ -482,6 +491,20 @@
             lesson3_2Trigger.onclick = function () {
                 modal.style.display = "block";
                 modal_title.innerHTML = "Unit 3: Java Arrays Updated Syntax";
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    //going to 3-3
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/R6910gnfcRk/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=1";
+                    modal_title.innerHTML = "Unit 3: Java Array Methods";
+                }
+            }
+
+            //Lesson 3-3
+            var lesson3_3Trigger = document.getElementById("lesson3-3-link");
+
+            lesson3_3Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 3: Java Array Methods";
                 modal_button.value = "Next Lesson";
             }
 
