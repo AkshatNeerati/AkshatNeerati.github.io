@@ -138,6 +138,16 @@
                            <div id="lesson4-2" class="lesson">
                                <a id="lesson4-2-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/NQ3MwhEavzA/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0" target="edu-video-player">Java Scanner</a>
                            </div>
+
+                           <div id="lesson4-3" class="lesson">
+                               <a id="lesson4-3-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/sSXi0RMCVyg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0" target="edu-video-player">Java Math</a>
+                           </div>
+                    </div>
+
+
+                    <div class="java-operators">
+                        <h3 class="header">Unit 5: Java Operators</h3>
+                        <hr class="course-divider">
                     </div>
                 </div>
 
@@ -582,10 +592,15 @@
                 modal_button.onclick = function () {    //going to 4-2
                     document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/NQ3MwhEavzA/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0";
                     modal_title.innerHTML = "Unit 4: Java Scanner";
-                    modal_button.value = "Next Unit: Java Operators";
 
-                    modal_button.onclick = function () {    //close modal for next unit
-                        modal.style.display = "none";
+                    modal_button.onclick = function () {    //going to 4-3
+                        document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/sSXi0RMCVyg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0";
+                        modal_title.innerHTML = "Unit 4: Java Math";
+                        modal_button.value = "Next Unit: Java Operators";
+                        
+                        modal_button.onclick = function () {    //close modal for next unit
+                            modal.style.display = "none";
+                        }
                     }
                 }
             }
@@ -596,6 +611,25 @@
             lesson4_2Trigger.onclick = function () {
                 modal.style.display = "block";
                 modal_title.innerHTML = "Unit 4: Java Scanner";
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    //going to 4-3
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/sSXi0RMCVyg/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0";
+                    modal_title.innerHTML = "Unit 4: Java Math";
+                    modal_button.value = "Next Unit: Java Operators";
+
+                    modal_button.onclick = function () {    //close modal for next unit
+                        modal.style.display = "none";
+                    }
+                }
+            }
+
+            //Lesson 4-3
+            var lesson4_3Trigger = document.getElementById("lesson4-3-link");
+
+            lesson4_3Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 4: Java Math";
                 modal_button.value = "Next Unit: Java Operators";
 
                 modal_button.onclick = function () {    //close modal for next unit
