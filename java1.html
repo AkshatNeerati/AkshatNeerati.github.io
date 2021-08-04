@@ -165,6 +165,17 @@
                                 <a id="lesson5-4-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/wLcl66pkXjI/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0" target="edu-video-player">Java Logical Operators</a>
                             </div>
                     </div>
+
+
+                    <div class="java-statements">
+                        <h3 class="header">Unit 6: Java Statements</h3>
+                        <hr class="course-divider">
+
+                            <div id="lesson6-1" class="lesson">
+                                <a id="lesson6-1-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/Ovv_ORzrWbc/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0" target="edu-video-player">Java If Statements</a>
+                            </div>
+                    </div>
+
                 </div>
 
 
@@ -763,6 +774,16 @@
                     modal.style.display = "none";
                     document.getElementById("lesson-video").src = "none";
                 }
+            }
+
+
+            //Lesson 6-1
+            var lesson6_1Trigger = document.getElementById("lesson6-1-link");
+
+            lesson6_1Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 6: Java If Statements";
+                modal_button.value = "Next Lesson";
             }
 
 
