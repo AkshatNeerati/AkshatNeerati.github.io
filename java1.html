@@ -178,6 +178,10 @@
                             <div id="lesson6-2" class="lesson">
                                 <a id="lesson6-2-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/n_wFO7hnQcs/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0" target="edu-video-player">Java Ternary Operator</a>
                             </div>
+
+                            <div id="lesson6-3" class="lesson">
+                                <a id="lesson6-3-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/wS2zGPq9eQ0/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0" target="edu-video-player">Java Switch Statements</a>
+                            </div>
                     </div>
 
                 </div>
@@ -792,6 +796,17 @@
                 modal_button.onclick = function () {    //going to 6-2
                     document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/n_wFO7hnQcs/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0";
                     modal_title.innerHTML = "Unit 6: Java Ternary Operator";
+
+                    modal_button.onclick = function () {    //going to 6-3
+                        document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/wS2zGPq9eQ0/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0";
+                        modal_title.innerHTML = "Unit 6: Java Switch Statements";
+                        modal_button.value = "Next Unit: Java Loops";
+
+                        modal_button.onclick = function () {    //close modal for next unit
+                            modal.style.display = "none";
+                            document.getElementById("lesson-video").src = "none";
+                        }
+                    }
                 }
             }
 
@@ -801,6 +816,32 @@
             lesson6_2Trigger.onclick = function () {
                 modal.style.display = "block";
                 modal_title.innerHTML = "Unit 6: Java Ternary Operator";
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    //going to 6-3
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/wS2zGPq9eQ0/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0";
+                    modal_title.innerHTML = "Unit 6: Java Switch Statements";
+                    modal_button.value = "Next Unit: Java Loops";
+
+                    modal_button.onclick = function () {
+                        modal.style.display = "none";
+                        document.getElementById("lesson-video").src = "none";
+                    }
+                }
+            }
+
+            //Lesson 6-3
+            var lesson6_3Trigger = document.getElementById("lesson6-3-link");
+
+            lesson6_3Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 6: Java Switch Statements";
+                modal_button.value = "Next Unit: Java Loops";
+
+                modal_button.onclick = function () {    //close modal for next unit
+                    modal.style.display = "none";
+                    document.getElementById("lesson-video").src = "none";
+                }
             }
 
 
