@@ -191,6 +191,10 @@
                             <div id="lesson7-1" class="lesson">
                                 <a id="lesson7-1-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/OFQJU5KkiZw/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0" target="edu-video-player">Java While Loops</a>
                             </div>
+
+                            <div id="lesson7-2" class="lesson">
+                                <a id="lesson7-2-link" class="lesson-link" href="https://www.youtube-nocookie.com/embed/AT2k2ZvsZFU/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0" target="edu-video-player">Java Do-While Loops</a>
+                            </div>
                     </div>
 
                 </div>
@@ -860,6 +864,20 @@
             lesson7_1Trigger.onclick = function () {
                 modal.style.display = "block";
                 modal_title.innerHTML = "Unit 7: Java While Loops";
+                modal_button.value = "Next Lesson";
+
+                modal_button.onclick = function () {    //going to 7-2
+                    document.getElementById("lesson-video").src = "https://www.youtube-nocookie.com/embed/AT2k2ZvsZFU/?controls=1&enablejsapi=1&modestbranding=1&showinfo=0&iv_load_policy=3&html5=1&fs=1&rel=0&hl=en&cc_lang_pref=en&cc_load_policy=1&start=0";
+                    modal_title.innerHTML = "Unit 7: Java Do-While Loops";
+                }
+            }
+
+            //Lesson 7-2
+            var lesson7_2Trigger = document.getElementById("lesson7-2-link");
+
+            lesson7_2Trigger.onclick = function () {
+                modal.style.display = "block";
+                modal_title.innerHTML = "Unit 7: Java Do-While Loops";
                 modal_button.value = "Next Lesson";
             }
 
